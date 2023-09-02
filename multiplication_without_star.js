@@ -19,3 +19,6 @@ const multiplication_without_star = (a,b,multiplicator) => {
 }
 
 console.log(multiplication_without_star(6,2));
+
+// Time complexity: O(n)
+// Space complexity: O(n)
