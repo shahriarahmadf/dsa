@@ -17,7 +17,7 @@ def bracket_closure(s):
                 pointer += 1
             else:
                 break
-
+ 
     if (pointer == len(req_ending_brackets)):
         return True
     else:

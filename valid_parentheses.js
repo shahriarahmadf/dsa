@@ -33,3 +33,6 @@ var isValid = function(s) {
         return false;
     }
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
