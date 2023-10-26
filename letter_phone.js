@@ -20,7 +20,7 @@ module.exports = {
                for (let currentLetter of currentLetters){
                    backtrack(buttons,A.slice(1),[currentLetter]);
                }
-               
+
            }
            
            let result = [];
