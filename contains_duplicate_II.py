@@ -16,9 +16,12 @@ class Solution:
         for index,num in enumerate(nums):
             hashmap[num].append(index)
 
-        for val in hashmap.values():
-            if len(val)>0:
-                ans = find_min_difference(val,k)
+        for indices in hashmap.values():
+            if len(indices)>0:
+                ans = find_min_difference(indices,k)
 
                 if ans == True:
                     return ans
+
+
+            
