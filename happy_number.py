@@ -1,21 +1,21 @@
-
-def isHappy(n: int) -> bool:
-    def happy(n,loop=False):
+class Solution:
+    def __init__(self):
+        self.history = []
     
-        n = str(n)
+    def isHappy(self, n: int) -> bool:
+        if n in self.history:
+            return False
+        self.history.append(n)
+
         total = 0
-        for digit in n:
-            total = total + int(digit)**2
+        while n>0:
+            rem = n%10
+            n = n//10
+            total += rem**2
         
-        if loop==False:
-            loop = total  
         if total == 1:
             return True
-        if loop == n:
-            return False
+        else:
+            n = total
+            return self.isHappy(n)
         
-        return happy(total,loop)
-
-    return happy(n)
-
-print(isHappy(19))
